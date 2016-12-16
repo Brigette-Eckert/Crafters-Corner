@@ -35,9 +35,9 @@ Crafting blog for people who like to make stuff. Built with Drupal 7 as part of 
 
 1. As an anoymous user I can view tutorials, tips & tricks and the static pages. 
 
-2. As an authenicated user I can post comments.  
+2. As an appertentice I can post comments, edit and delete my own comments, review tutorials and skip comment approval.  
 
-3. As a instructor I can create new tutorials. 
+3. As a artisian I can create new tutorials. 
 
 
 ####Surpise Me Module 
