@@ -98,6 +98,7 @@ Crafting blog for people who like to make stuff. Built with Drupal 7 as part of 
 
 Hide non relevant social media links in follow alter module
 
+Hide simple contact module if logged in as admin
 
 # What I learned from this project
 

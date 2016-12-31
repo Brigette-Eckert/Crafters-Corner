@@ -11,5 +11,5 @@ function simple_contact_form_alter(&$form, &$form_state, $form_id){
         //hide from user
       $form['subject']['#type'] = 'hidden';
       $form['copy']['#type'] = 'hidden';
-}
+    }
 }
