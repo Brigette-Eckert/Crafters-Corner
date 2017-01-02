@@ -11,16 +11,16 @@ function surprise_tutorial_menu(){
 }
 
 function random_tutorial(){
+
     //use content/tutorial + wildcard for redirect
     //might need to get array of all tutorials
-    $tutorials = array('jaynes-hat', 'rfid-cat-door', 'fairy-lanterns', 'lavender-bath-salts');
+    $tutorials = array('jaynes-hat', 'dr-who-scarf', 'grey-totoro-amigurumi', 'pajama-pants', 'temperature-and-humidity-monitor', 'cat-puzzle', 'lavender-sachets', 'feather-fan-shawl', 'rfid-cat-door', 'fairy-lanterns', 'lavender-bath-salts');
 
     //picks random index from array
     $random_pick = array_rand($tutorials);
     $random_tutorial = $tutorials[$random_pick];
 
 
-    $url = 'content/tutorial/' . $random_tutorial;
-    drupal_goto($url);
+//    drupal_goto($url);
 
 }

@@ -102,6 +102,7 @@ Hide simple contact module if logged in as admin
 
 Index site with Cron and add search view
 
+On surpise me module: Find way to generate array of tutorials, rather than manually write
 
 # What I learned from this project
 
