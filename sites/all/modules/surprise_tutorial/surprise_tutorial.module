@@ -1,0 +1,17 @@
+<?php
+
+function surprise_tutorial_menu(){
+    $items['surprise_tutorial'] = array(
+        'title' => 'Surprise Me!',
+        'page callback' => 'random_tutorial',
+        'access callback' => TRUE,
+        'type' => MENU_NORMAL_ITEM,
+    );
+    return $items;
+}
+
+function random_tutorial(){
+    //use content/tutorial + wildcard for redirect
+//    print("hello");
+    drupal_goto('content/tutorial/jaynes-hat');
+}

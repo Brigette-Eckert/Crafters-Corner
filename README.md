@@ -100,6 +100,9 @@ Hide non relevant social media links in follow alter module
 
 Hide simple contact module if logged in as admin
 
+Index site with Cron and add search view
+
+
 # What I learned from this project
 
 1. Learned how to use Panethon to deploy drupal sites
