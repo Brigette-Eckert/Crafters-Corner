@@ -14,14 +14,27 @@ function random_tutorial(){
 
     //db query
     //from node select all with type tutorial
+    $results = db_select('node', 'n')
+        -> fields('n')
+        -> condition('type', 'tutorial')
+        -> execute()
+        -> fetchAllAssoc('title');
+//
 
-    $tutorials = array('jaynes-hat', 'dr-who-scarf', 'grey-totoro-amigurumi', 'pajama-pants', 'temperature-and-humidity-monitor', 'cat-puzzle', 'lavender-sachets', 'feather-fan-shawl', 'rfid-cat-door', 'fairy-lanterns', 'lavender-bath-salts');
+//    print_r($results);
+    foreach($results as $value){
+        $tutorial_name = ($value->title);
+        //convert white spaces to -
+        $tutorial_url_name = preg_replace("/\s/", "-", $tutorial_name);
+        $tutorials[] = $tutorial_url_name;
+    }
 
+    print_r($tutorials);
     //picks random index from array
     $random_pick = array_rand($tutorials);
     $random_tutorial = $tutorials[$random_pick];
 
-
+    $url = '/content/tutorial/' . $random_tutorial;
 
     drupal_goto($url);
 
