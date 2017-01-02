@@ -12,8 +12,9 @@ function surprise_tutorial_menu(){
 
 function random_tutorial(){
 
-    //use content/tutorial + wildcard for redirect
-    //might need to get array of all tutorials
+    //db query
+    //from node select all with type tutorial
+
     $tutorials = array('jaynes-hat', 'dr-who-scarf', 'grey-totoro-amigurumi', 'pajama-pants', 'temperature-and-humidity-monitor', 'cat-puzzle', 'lavender-sachets', 'feather-fan-shawl', 'rfid-cat-door', 'fairy-lanterns', 'lavender-bath-salts');
 
     //picks random index from array
@@ -21,6 +22,7 @@ function random_tutorial(){
     $random_tutorial = $tutorials[$random_pick];
 
 
-//    drupal_goto($url);
+
+    drupal_goto($url);
 
 }
