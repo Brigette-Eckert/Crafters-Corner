@@ -12,6 +12,15 @@ function surprise_tutorial_menu(){
 
 function random_tutorial(){
     //use content/tutorial + wildcard for redirect
-//    print("hello");
-    drupal_goto('content/tutorial/jaynes-hat');
+    //might need to get array of all tutorials
+    $tutorials = array('jaynes-hat', 'rfid-cat-door', 'fairy-lanterns', 'lavender-bath-salts');
+
+    //picks random index from array
+    $random_pick = array_rand($tutorials);
+    $random_tutorial = $tutorials[$random_pick];
+
+
+    $url = 'content/tutorial/' . $random_tutorial;
+    drupal_goto($url);
+
 }
