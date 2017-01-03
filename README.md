@@ -87,6 +87,10 @@ Crafting blog for people who like to make stuff. Built with Drupal 7 as part of 
 8. Create Entity Reference Fields
 
     A. Allow artisans and tutorials to have many to many relationships
+    
+    B. Create view of all artisians that link to tutorials 
+    
+   C. Include links to view of all tutorials by artisian on profile
 
 
 9. Make a module called surprise me
@@ -98,14 +102,27 @@ Crafting blog for people who like to make stuff. Built with Drupal 7 as part of 
 
 Hide non relevant social media links in follow alter module
 
+Fix follow so only shows up on user page that opts in and isn't the same for everyone
+
+Alter entity reference module to only display on user profile if user has role of artisian
+
 Hide simple contact module if logged in as admin
+
+Link tutorials on user page and artisians on tutorials refrence eninity to adding one with auto populate the other
 
 Index site with Cron and add search view
 
-On surpise me module: Find way to generate array of tutorials, rather than manually write
+
 
 # What I learned from this project
 
 1. Learned how to use Panethon to deploy drupal sites
 
 2. Learned how to alter existing modules using the alter hook
+
+3. Learned about using DB queries with DB_Select in modules
+
+4. Learned about the Reference Entity Module
+
+5. Practiced using more complex views 
+
